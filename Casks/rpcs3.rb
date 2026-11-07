@@ -9,6 +9,7 @@ cask "rpcs3" do
 
   depends_on arch: :arm64
   depends_on :macos
+  
   app "RPCS3.app"
 
   zap trash: [
