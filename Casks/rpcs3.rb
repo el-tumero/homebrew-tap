@@ -7,10 +7,10 @@ cask "rpcs3" do
   desc "PlayStation 3 emulator"
   homepage "https://rpcs3.net/"
 
-  app "RPCS3.app"
-
   depends_on arch: :arm64
   depends_on :macos
+  
+  app "RPCS3.app"
 
   zap trash: [
     "~/Library/Application Support/rpcs3",
