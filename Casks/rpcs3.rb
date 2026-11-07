@@ -9,6 +9,9 @@ cask "rpcs3" do
 
   app "RPCS3.app"
 
+  depends_on arch: :arm64
+  depends_on :macos
+
   zap trash: [
     "~/Library/Application Support/rpcs3",
     "~/Library/Caches/rpcs3",
